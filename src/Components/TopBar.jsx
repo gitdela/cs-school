@@ -3,8 +3,8 @@ import { BsTelephoneFill } from 'react-icons/bs';
 
 const TopBar = () => {
   return (
-    <div className='w-full hidden bg-slate-400 lg:block'>
-      <div className='max-w-screen-xl mx-auto flex text-white justify-around px-4 py-2'>
+    <div className='w-full hidden bg-customOrange lg:block'>
+      <div className='max-w-screen-xl mx-auto flex text-gray-700 justify-around px-4 py-2'>
         <div className='flex items-center text-sm'>
           <p className='whitespace-nowrap mr-3'>Give us a call</p>
           <BsTelephoneFill size={15} className='mr-1' />

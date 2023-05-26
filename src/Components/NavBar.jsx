@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import BrandName from '../Assets/logo.png';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
 
 const NavBar = () => {
   const [nav, setNav] = useState(true);
@@ -32,7 +31,7 @@ const NavBar = () => {
     },
   ];
   return (
-    <nav className='w-full fixed text-black bg-customYellow/80'>
+    <nav className='w-full fixed text-black bg-customYellow/80 z-10'>
       <div className='max-w-screen-xl mx-auto flex h-20 justify-between items-center px-4'>
         <img src={BrandName} className='h-full' alt='' />
         <ul className='hidden lg:flex px-4'>
