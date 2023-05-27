@@ -25,12 +25,18 @@ const Hero = () => {
     },
   ];
 
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(3);
 
   const prevSlide = () => {
     const isFirstSlide = currentIndex === 0;
-    const newSlide = isFirstSlide ? slides.length - 1 : currentIndex - 1;
-    setCurrentIndex(newSlide);
+    const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
+    setCurrentIndex(newIndex);
+  };
+
+  const nextSlide = () => {
+    const isLastSlide = currentIndex === slides.length - 1;
+    const newIndex = isLastSlide ? 0 : currentIndex + 1;
+    setCurrentIndex(newIndex);
   };
 
   useEffect(() => {
@@ -42,23 +48,22 @@ const Hero = () => {
   }, [slides]);
 
   return (
-    <div className='flex flex-col group h-[780px] w-full mx-auto py-16 pt-20 relative'>
-      <div
-        style={{
-          background: `url(${slides[currentIndex].url})`,
-          backgroundSize: 'cover',
-          backgroundPosition: '50% 30%',
-          backgroundRepeat: 'no-repeat',
-        }}
-        className='w-full h-full'
-      ></div>
+    <div className='group h-[780px] w-screen py-16 pt-20 relative'>
+      <img
+        src={slides[currentIndex].url}
+        alt=''
+        className='w-full h-full object-cover'
+      />
       <div
         onClick={prevSlide}
         className='lg:hidden absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/50 text-customOrange cursor-pointer lg:group-hover:block'
       >
         <BsArrowLeftShort size={30} />
       </div>
-      <div className='lg:hidden absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/50 text-customOrange cursor-pointer lg:group-hover:block'>
+      <div
+        onClick={nextSlide}
+        className='lg:hidden absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/50 text-customOrange cursor-pointer lg:group-hover:block'
+      >
         <BsArrowRightShort size={30} />
       </div>
     </div>
