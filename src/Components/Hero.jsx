@@ -39,14 +39,6 @@ const Hero = () => {
     setCurrentIndex(newIndex);
   };
 
-  useEffect(() => {
-    // Preload images
-    slides.forEach((slide) => {
-      const image = new Image();
-      image.src = slide.url;
-    });
-  }, [slides]);
-
   return (
     <div className='group h-[780px] w-screen py-16 pt-20 relative'>
       <img

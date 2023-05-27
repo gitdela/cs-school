@@ -31,9 +31,9 @@ const NavBar = () => {
     },
   ];
   return (
-    <nav className='w-full absolute text-black bg-customYellow/80 z-10'>
+    <nav className='w-full fixed text-black bg-customYellow/80 z-10'>
       <div className='max-w-screen-xl mx-auto flex h-20 justify-between items-center px-4'>
-        <img src={BrandName} className='h-full' alt='' />
+        <img src={BrandName} className='h-4/5' alt='' />
         <ul className='hidden lg:flex px-4'>
           {links.map(({ id, link }) => (
             <li
@@ -56,11 +56,11 @@ const NavBar = () => {
         {/* {mobile menu} */}
       </div>
       {!nav && (
-        <ul className='flex flex-col bg-customYellow/80 space-y-12 justify-start items-center absolute left-0 right-0 h-screen w-full ease-in px-4 py-16'>
+        <ul className='flex flex-col bg-customYellow/95 justify-center items-center absolute inset-0 h-screen w-full px-4 xxs:space-y-6'>
           {links.map(({ id, link }) => (
             <li
               key={id}
-              className='capitalize font-bold text-gray-600 text-4xl'
+              className='capitalize font-bold text-base text-gray-600 xxs:text-xl xs:text-2xl sm:text-4xl '
             >
               <a href='/' className='hover:text-customOrange'>
                 {link}
