@@ -58,7 +58,7 @@ const Hero = () => {
       >
         <BsArrowLeftShort size={30} />
       </div>
-      <div className='lg:hidden absolute top-[50%] -translate-x-0 tranlate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/50 text-customOrange cursor-pointer lg:group-hover:block'>
+      <div className='lg:hidden absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/50 text-customOrange cursor-pointer lg:group-hover:block'>
         <BsArrowRightShort size={30} />
       </div>
     </div>
