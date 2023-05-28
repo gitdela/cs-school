@@ -1,7 +1,8 @@
 import React from 'react';
-import TopBar from './Components/TopBar';
+// import TopBar from './Components/TopBar';
 import NavBar from './Components/NavBar';
 import Hero from './Components/Hero';
+import Welcome from './Components/Welcome';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       {/* <TopBar /> */}
       <NavBar />
       <Hero />
+      <Welcome />
     </div>
   );
 }

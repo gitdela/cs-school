@@ -31,7 +31,7 @@ const NavBar = () => {
     },
   ];
   return (
-    <nav className='w-full fixed text-black bg-customYellow/80 z-10'>
+    <nav className='w-full fixed text-black bg-customYellow/80 z-50'>
       <div className='max-w-screen-xl mx-auto flex h-20 justify-between items-center px-4'>
         <img src={BrandName} className='h-4/5' alt='' />
         <ul className='hidden lg:flex px-4'>
