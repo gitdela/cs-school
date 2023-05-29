@@ -40,7 +40,7 @@ const Hero = () => {
     },
   ];
 
-  const [currentIndex, setCurrentIndex] = useState(3);
+  const [currentIndex, setCurrentIndex] = useState(4);
 
   const prevSlide = () => {
     const isFirstSlide = currentIndex === 0;
@@ -55,7 +55,7 @@ const Hero = () => {
   };
 
   return (
-    <div className='group h-[780px] w-screen pt-20 relative'>
+    <div className='group h-[780px] pt-20 relative'>
       <img
         src={slides[currentIndex].url}
         alt=''

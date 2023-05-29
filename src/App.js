@@ -3,7 +3,8 @@ import React from 'react';
 import NavBar from './Components/NavBar';
 import Hero from './Components/Hero';
 import WelcomeMain from './Components/WelcomeMain';
-import NewsEvents from './Components/NewsEvents';
+// import NewsEvents from './Components/NewsEvents';
+import NewsCarousel from './Components/NewsCarousel';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Hero />
       <WelcomeMain />
       {/* <NewsEvents /> */}
+      <NewsCarousel />
     </div>
   );
 }
