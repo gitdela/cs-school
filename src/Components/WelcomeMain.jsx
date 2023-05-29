@@ -1,0 +1,44 @@
+import React from 'react';
+import { GiAchievement } from 'react-icons/gi';
+
+const WelcomeMain = () => {
+  return (
+    <section className='w-screen py-12 px-4'>
+      <div className='max-w-screen-xl mx-auto space-y-12 justify-between  sm:flex sm:space-y-0 sm:mt-4 gap-20 sm:text-xl'>
+        <div className='flex flex-col justify-start space-y-8 items-between sm:w-1/2'>
+          <h1 className='text-2xl font-bold'>
+            Welcome to
+            <br /> Crystal Heights School
+          </h1>
+          <p className=''>
+            There are two distinctive aims which underpin the entire work of our
+            school.
+          </p>
+          <button className='text-lg w-32'>About Us</button>
+        </div>
+        <div className='flex flex-col space-y-12 sm:w-1/2'>
+          <div className='mt-4 sm:mt-0'>
+            <GiAchievement size={100} className='text-customOrange' />
+            <h3 className='my-4 text-2xl'>Achieving Success</h3>
+            <p>
+              Encouraging high aspirations and a love of learning, whilst
+              maximising potential. Offering diverse and rewarding opportunities
+              for all and celebrating successes.
+            </p>
+          </div>
+          <div className='mt-4'>
+            <GiAchievement size={100} className='text-customOrange' />
+            <h3 className='my-4 text-2xl'>Achieving Success</h3>
+            <p className=''>
+              Encouraging high aspirations and a love of learning, whilst
+              maximising potential. Offering diverse and rewarding opportunities
+              for all and celebrating successes.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default WelcomeMain;

@@ -13,9 +13,10 @@ const Welcome = () => {
         </h1>
       </div>
       <p className='text-center text-sm p-1 pb-2'>
-        Our mission dolor, sit amet consectetur adipisicing elit. Ipsa
-        exercitationem quisquam ipsum repellendus autem vero voluptatum. Hic eum
-        molestiae quos quas sit cumque aliquam sunt!
+        Founded in 1998, our mission dolor, sit amet consectetur adipisicing
+        elit. Ipsa ffss ppa nclsrei nd wi dl hbwde nhc exercitationem quisquam
+        ipsum repellendus autem vero voluptatum. Hic eum molestiae quos quas sit
+        cumque aliquam sunt!
       </p>
       <div className='w-full flex justify-center m-4 space-x-2 sm:space-x-20 items-center'>
         <div className='bg-customYellow flex flex-col items-center justify-center py-3 w-1/3 cursor-pointer text-center'>

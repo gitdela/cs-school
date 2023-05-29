@@ -75,7 +75,7 @@ const Hero = () => {
       </div>
       <div className='absolute bottom-0 left-0 right-0 h-3/5 bg-gradient-to-t from-black to-transparent z-10'></div>
 
-      <div className='absolute right-[50%] translate-x-[50%] text-base font-bold text-gray-400 top-[90%] italic z-20 sm:text-3xl'>
+      <div className='absolute right-[50%] translate-x-[50%] text-2xl font-bold text-gray-400 top-[90%] italic z-20 sm:text-3xl'>
         {slides[currentIndex].heading}
       </div>
     </div>
