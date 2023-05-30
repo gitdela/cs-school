@@ -6,6 +6,7 @@ import WelcomeMain from './Components/WelcomeMain';
 // import NewsEvents from './Components/NewsEvents';
 import NewsCarousel from './Components/NewsCarousel';
 import UpcomingEvents from './Components/UpcomingEvents';
+import FullCalendar from './Components/SubComponents/FullCalendar';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <UpcomingEvents />
       {/* <NewsEvents /> */}
       <NewsCarousel />
+      <FullCalendar />
     </div>
   );
 }

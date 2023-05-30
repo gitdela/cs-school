@@ -25,7 +25,7 @@
   }
 
   button {
-    @apply px-4 py-3 bg-customOrange border border-gray-100 text-white hover:bg-transparent hover:text-gray-700 hover:border-gray-700 transition duration-300;
+    @apply px-4 py-3 bg-customOrange border text-white hover:bg-customYellow hover:text-gray-700 transition duration-300;
   }
 
   h2 {
