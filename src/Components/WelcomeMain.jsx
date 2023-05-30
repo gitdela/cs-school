@@ -14,9 +14,9 @@ const WelcomeMain = () => {
             There are two distinctive aims which underpin the entire work of our
             school.
           </p>
-          <button className='text-lg w-32 mx-auto sm:ml-0'>About Us</button>
+          <button className='text-lg w-full mx-auto sm:ml-0'>About Us</button>
         </div>
-        <div className='flex flex-col items-center space-y-12 sm:w-1/2'>
+        <div className='flex flex-col items-center space-y-8 sm:w-1/2'>
           <div className='mt-4 sm:mt-0'>
             <GiAchievement
               size={100}

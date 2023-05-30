@@ -25,7 +25,7 @@
   }
 
   button {
-    @apply px-4 py-2 border bg-gradient-to-r from-[--primary-dark] to-[--primary-light] text-white;
+    @apply px-4 py-3 bg-customOrange border border-gray-100 text-white hover:bg-transparent hover:text-gray-700 hover:border-gray-700 transition duration-300;
   }
 
   h2 {

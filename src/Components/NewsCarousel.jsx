@@ -7,7 +7,7 @@ import img4 from '../Assets/news/yustinus-tjiuwanda-BCBGahg0MH0-unsplash (1).jpg
 const NewsCarousel = () => {
   return (
     <div className='w-full flex items-center my-4 py-8 justify-center bg-customOrange'>
-      <div className='grid grid-cols-1 sm:grid-cols-2 gap-5'>
+      <div className='grid grid-cols-1 sm:grid-cols-4 gap-5'>
         <div className='group relative items-center justify-center overflow-hidden cursor-pointer hover:shadow-xl hover:shadow-black/30 transition-shadow'>
           <div className='h-96 w-72'>
             <img
