@@ -16,6 +16,10 @@ module.exports = {
         customYellow: '#d3c44f',
         customOrange: '#ff963f',
       },
+      fontFamily: {
+        dmserif: ['DM Serif', 'serif'],
+        com: ['Comfortaa', 'cursive'],
+      },
     },
   },
   plugins: [],
