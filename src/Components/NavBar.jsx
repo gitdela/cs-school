@@ -40,7 +40,7 @@ const NavBar = () => {
               key={id}
               className='capitalize font-bold text-gray-600 text-base'
             >
-              <a href='#' className='hover:text-customOrange'>
+              <a href={link} className='hover:text-customOrange'>
                 {link}
               </a>
             </li>
@@ -62,7 +62,7 @@ const NavBar = () => {
               key={id}
               className='capitalize font-bold text-base text-gray-600 xxs:text-xl xs:text-2xl sm:text-4xl '
             >
-              <a href='/' className='hover:text-customOrange'>
+              <a href={link} className='hover:text-customOrange'>
                 {link}
               </a>
             </li>

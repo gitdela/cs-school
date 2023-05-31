@@ -67,12 +67,12 @@ const FullCalendar = () => {
     });
   };
   return (
-    <div className='wrapper mt-20'>
-      <h1 className='text-center text-5xl font-semibold mb-4'>
-        Full 2022/23 Schedule
+    <div className='wrapper pt-24'>
+      <h1 className='text-center text-2xl xs:text-3xl font-semibold'>
+        Full 2022/23 Academic Schedule
       </h1>
 
-      <div className='max-w-screen-xl mx-auto w-full p-4'>
+      <div className='max-w-screen-xl mx-auto w-full px-4'>
         {accordions.map(({ id, term, news }, index) => (
           <React.Fragment key={id}>
             <div
