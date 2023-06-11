@@ -6,12 +6,12 @@ import Calendar from './Pages/Calendar';
 function App() {
   return (
     <div>
-      <BrowserRouter basename='/cs-school'>
+      <BrowserRouter>
         <Routes>
           <Route index element={<Home />} />
-          <Route path='/home' element={<Home />} />
+          {/* <Route path='/home' element={<Home />} /> */}
           <Route path='/cs-school' element={<Home />} />
-          <Route path='/calendar' element={<Calendar />} />
+          <Route path='/cs-school/calendar' element={<Calendar />} />
         </Routes>
       </BrowserRouter>
     </div>
