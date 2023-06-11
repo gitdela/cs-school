@@ -1,19 +1,19 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './Pages/Home';
 import Calendar from './Pages/Calendar';
 
 function App() {
   return (
     <div>
-      <BrowserRouter>
+      <Router>
         <Routes>
-          <Route index element={<Home />} />
+          {/* <Route index element={<Home />} /> */}
           {/* <Route path='/home' element={<Home />} /> */}
           <Route path='/cs-school' element={<Home />} />
-          <Route path='/cs-school/calendar' element={<Calendar />} />
+          <Route path='/Calendar' element={<Calendar />} />
         </Routes>
-      </BrowserRouter>
+      </Router>
     </div>
   );
 }
