@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import BrandName from '../Assets/logo.png';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
   const [nav, setNav] = useState(true);
@@ -40,9 +41,9 @@ const NavBar = () => {
               key={id}
               className='capitalize font-bold text-gray-600 text-base'
             >
-              <a href={link} className='hover:text-customOrange'>
+              <Link to={`/${link}`} className='hover:text-customOrange'>
                 {link}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
