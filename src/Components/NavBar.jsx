@@ -63,9 +63,9 @@ const NavBar = () => {
               key={id}
               className='capitalize font-bold text-base text-gray-600 xxs:text-xl xs:text-2xl sm:text-4xl '
             >
-              <a href={link} className='hover:text-customOrange'>
+              <Link to={`/${link}`} className='hover:text-customOrange'>
                 {link}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
